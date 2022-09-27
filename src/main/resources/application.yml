@@ -1,0 +1,8 @@
+spring:
+  data:
+    cassandra:
+      username: cassandra
+      password: cassandra
+      local-datacenter: datacenter1
+      keyspace-name: app_logs
+      schema-action: create_if_not_exists

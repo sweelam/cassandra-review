@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  cassandra:
+    container_name: cassandra-demo
+    image: 'bitnami/cassandra'
+    ports:
+      - '9042:9042'
+    restart: always
+    volumes:
+      - "./docker/cassandra:/dumps"
